@@ -11,14 +11,14 @@
 * Created/ builded *HTML* `tags`, `classes` & `IDs`.
 * Updated ARIA roles for some part of `HTML` page
 
-|#### HTML TAGs|#### ARIA Roles|
+|__HTML TAGs__|__ARIA Roles__|
 |----|----|
-|`< Header >`|**role="banner"**|
-|`< nav >`|**role="navigation"**|
-|`< ul >`|**role="complementary"**|
-|`<button>`|**aria-label="search-button"**|
-|`<img>`|**role="Image descration"**|
-|`<footer>`|**role="content info"**|
+|`< Header >`|*role="banner"*|
+|`< nav >`|*role="navigation"*|
+|`< ul >`|*role="complementary"*|
+|`<button>`|*aria-label="search-button"*|
+|`<img>`|*role="Image descration"*|
+|`<footer>`|*role="content info"*|
 
 * Created/ updated *CSS* rules for the project.
 * 
