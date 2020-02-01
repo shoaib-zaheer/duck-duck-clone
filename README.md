@@ -10,9 +10,11 @@
 * Copy and save images from DuckDuckGo web site to my own repository.
 * Created/ builded ~HTML~ `tags`, `classes` & `IDs`.
 * Updated ARIA roles for some part of `HTML` page
-    |HTML TAGs|ARIA Roles|
-    |----|----|-----|
-    |||
+
+|HTML TAGs|ARIA Roles|
+|----|----|
+|`< Header >`|**role="banner"**|
+|`< nav >`|**role="navigation"**|
 * Created/ updated ~CSS~ rules for the project.
 * 
 
