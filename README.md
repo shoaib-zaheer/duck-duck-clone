@@ -8,14 +8,19 @@
 * Fork Duck-Duck-Go [`Repository`](https://github.com/shoaib-zaheer/duck-duck-clone) to may Github account.
 * Created `IMG` & `CSS` folders.
 * Copy and save images from DuckDuckGo web site to my own repository.
-* Created/ builded ~HTML~ `tags`, `classes` & `IDs`.
+* Created/ builded *HTML* `tags`, `classes` & `IDs`.
 * Updated ARIA roles for some part of `HTML` page
 
-|HTML TAGs|ARIA Roles|
+|#### HTML TAGs|#### ARIA Roles|
 |----|----|
 |`< Header >`|**role="banner"**|
 |`< nav >`|**role="navigation"**|
-* Created/ updated ~CSS~ rules for the project.
+|`< ul >`|**role="complementary"**|
+|`<button>`|**aria-label="search-button"**|
+|`<img>`|**role="Image descration"**|
+|`<footer>`|**role="content info"**|
+
+* Created/ updated *CSS* rules for the project.
 * 
 
 
