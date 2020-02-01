@@ -18,7 +18,7 @@
 <body>
 <div class="sit-wrapper">
   <!--H E A D E R-->
-  <header>
+  <header role="banner">
       <div class="container">
         <div class="dropdown">
           <button class="dropbtn"><img src="./img/twitter-logo.png" width="25px" height="25px" alt=""></button>
@@ -30,7 +30,7 @@
       </div>
 <!--Test menu-->
 
-<nav role="navigation">
+<nav role="navigation" role="main">
   <div id="slideLeft">
       <input type="checkbox">
       <span></span>
@@ -38,7 +38,7 @@
       <span></span>
       <span></span>
 
-      <ul id="nav-area">
+      <ul id="nav-area" role="complementary">
           <li class="menu-heading">
             <span>Settings</span>
           </li>
@@ -80,7 +80,7 @@
 <!--Logo Section-->
     <section id="content-wrap-home">
       <div class="logo">
-        <a id="logo_homepage" href="./about" alt="DuckDuckgo-logo"><a href="/about"><span class="logo-text-container">DuckDuckGo</span></a>
+        <a id="logo_homepage" href="./about" alt="DuckDuckGo-logo"><a href="/about"></a><span class="logo-text-container">DuckDuckGo</span>
           </div>
           <div class="search-wrap">
             <form action="/" name="x" id="search-form-input">
@@ -94,26 +94,28 @@
 <!--Body Section-->
 <Section class="budge-link">
   <div class="badge-link__wrap">
-    <div class="badge-link__content">
-      <h1 class="badge-link__title">Privacy, Simplified.</h1>
-      <p class="badge-link__subtitle">
-        Add Privacy protection to your browser. <br> Search privately, block trackers, secure connections, and more - all for free.
-      </p>
-      <a href="/" class="badge-link__btn-wrp"></a>
-      <span class="badge-link__btn">Add DuckDuckGo to Firefox</span>
-    </div>
-    <div class="badge-link__rating">
-      <p>Trusted by <b>Millions</b> worldwide</p>
-      <p class="badge-link__rating-wrap" title="Average rating:4.5 out of 5">
-        <span class="badge-link__rating__star">*</span>
-        <span class="badge-link__rating__star">*</span>
-        <span class="badge-link__rating__star">*</span>
-        <span class="badge-link__rating__star">*</span>
-        <span class="badge-link__rating__star">*</span>
-        <span><b>762</b>reviews</span>
-      </p>
-    </div>
-    <img class="badge-link__img" src="./img/background.svg" alt="women-reading">
+    <div class="badge-link__box-content">
+      <div class="badge-link__content">
+          <h1 class="badge-link__title">Privacy, Simplified.</h1>
+          <p class="badge-link__subtitle">
+            Add Privacy protection to your browser. <br> Search privately, block trackers, secure connections, and more - all for free.
+          </p>
+            <a href="index.html" class="badge-link__btn-wrp">
+              <span class="badge-link__btn">Add DuckDuckGo to Firefox</span></a>
+                </div>
+                <div class="badge-link__rating">
+              <p>Trusted by <b>Millions</b> worldwide</p>
+            <p class="badge-link__rating-wrap" title="Average rating:4.5 out of 5">
+            <span class="badge-link__rating__star">★</span>
+            <span class="badge-link__rating__star">★</span>
+            <span class="badge-link__rating__star">★</span>
+            <span class="badge-link__rating__star">★</span>
+            <span class="badge-link__rating__star">★</span>
+            <span><b>762</b> reviews</span>
+          </p>
+      </div>
+  </div>
+    <img class="badge-link__img" src="./img/background.svg" alt="Women-Reading">
   </div>
   <div class="content-info" lang="en">
     <div class="content-info__title">How it works</div>
@@ -121,7 +123,7 @@
       <div class="content-info__item-wrap">
 
         <div class="content-info__item">
-          <img class="content-info__item__icon" src="" alt="">
+          <img class="content-info__item__icon" src="./img/box.svg" alt="box-picture">
           <div class="content-info__item__title">Add to Firefox</div>
           <div class="content-info__item__subtitle">
             Just a few clicks to install, add you're ready to go. it's that easy.
@@ -129,7 +131,7 @@
         </div>
 
         <div class="content-info__item">
-          <img class="content-info__item__icon" src="" alt="">
+          <img class="content-info__item__icon" src="./img/browser.svg" alt="Browser-picture">
           <div class="content-info__item__title">Browse as Usual</div>
           <div class="content-info__item__subtitle">
             We'll block hidden trackers and encrypt connections to keep ou more private.
@@ -137,7 +139,7 @@
         </div>
 
         <div class="content-info__item">
-          <img class="content-info__item__icon" src="" alt="">
+          <img class="content-info__item__icon" src="./img/shield.svg" alt="shield-picture">
           <div class="content-info__item__title">Enjoy Peace of Mind</div>
           <div class="content-info__item__subtitle">
             DuckDuckGo Privacy Essentials protects your privacy, wherever that Internet takes you.
@@ -147,70 +149,72 @@
     </div>
   </div>
 </Section>
-<!--main div for top section-->
+<!--main div for top section get finished here-->
   </div>
-
-<!--Menu start from here-->
-<!--
-
-          <nav class="menu-side">
-            <ul>
-              <li class="nav.menu-heading">
-                <span>Settings</span>
-              </li>
-              <li><a href="Index.html">Themes</a></li>
-              <li><a href="Index.html">Other Setting</a></li>
-              <li><a href="Index.html">!Bang Search Shortcuts</a></li>
-            </ul>
-            <ul>
-              <li class="nav.menu-heading">
-                <span>Privacy Essentials</span>
-              </li>
-              <li><a href="Index.html">Private Search</a></li>
-              <li><a href="Index.html">App and Extension</a></li>
-            </ul>
-            <ul>
-              <li class="nav.menu-heading">
-                <span>Why Privacy</span>
-              </li>
-              <li><a href="Index.html">Privacy Blog</a></li>
-              <li><a href="Index.html">Privacy Crash Course</a></li>
-              <li><a href="Index.html">Help Spread Privacy</a></li>
-            </ul>
-            <ul>
-              <li class="nav.menu-heading">
-                <span>Who We Are</span>
-              </li>
-              <li><a href="Index.html">About Us</a></li>
-              <li><a href="Index.html">Privacy Policy</a></li>
-              <li><a href="Index.html">Careers</a></li>
-              <li><a href="Index.html">Press Kit</a></li>
-            </ul>
-            <ul>
-              <li class="nav.menu-heading">
-                <span>Keep In Touch</span>
-              </li>
-              <li><a href="Index.html">Twitter</a></li>
-              <li><a href="Index.html">Store</a></li>
-              <li><a href="Index.html">Reddit</a></li>
-              <li><a href="Index.html">Help</a></li>
-            </ul>
-          </nav>-->
-
 
 <!--Content_Wrapper Home-->
+<!--Green section-->
+<footer role="contentinfo">
 <section id="footer_homepage">
-  <div id="box-01">
+  <div id="onboarding-ed">
     <div class="onboarding-ed__content">
-      <h1 class="onboarding-ed__title">We don't store your<br>Personal information. Ever.</h1>
-      <p class="onboarding-ed__subtitle">Our privacy policy is simple: we don't collect <br> or share any of your personal information</p>
-      <button><a href="" class="badge-link__btn-wrp"></a></button>
-    </div>
-  </div>
-  <div class="onboarding-ed__image-container">
-    <img src="" alt="">
+      <h1 class="onboarding-ed__title">We don't store your<br data-owner="balance-text"> Personal information. Ever.</h1>
+        <p class="onboarding-ed__subtitle">Our privacy policy is simple: we don't collect <br> or share any of your personal information</p>
+          <a href="index.html" class="onboarding-ed__button-small">
+            <span class="badge-link__btn">Add DuckDuckGo to Firefox</span></a>
+         </div>
+        <div class="onboarding-ed__image-container">
+      <img class="onboarding-ed__image--placeholder" src="./img/1-monster-v2--pre-animation.svg" width="1200" height="460" alt="">
+    </div>  
   </div>
 </section>
+<!--Orange section-->
+
+<section id="footer_homepage">
+  <div id="onboarding-ed-2">
+    <div class="onboarding-ed__content">
+      <h1 class="onboarding-ed__title">We don't follow you<br data-owner="balance-text"> around with ads. </h1>
+        <p class="onboarding-ed__subtitle"> We don't store your search history. we therefore have nothing <br> to sell to advertisers that track you across the internet.</p>
+        <a href="index.html" class="onboarding-ed__button-small">
+          <span class="badge-link__btn">Add DuckDuckGo to Firefox</span></a>
+         </div>
+        <div class="onboarding-ed__image-container">
+      <img class="onboarding-ed__image--placeholder" src="./img/2-ghost-v2.svg" width="1200" height="460" alt="">
+    </div>  
+  </div>
+</section>
+<!--Purple section start here-->
+
+<section id="footer_homepage">
+  <div id="onboarding-ed-3">
+    <div class="onboarding-ed__content">
+      <h1 class="onboarding-ed__title">We don't track you in or out<br data-owner="balance-text"> of private browsing mode. </h1>
+        <p class="onboarding-ed__subtitle"> Other search engines track your searches even when you’re <br> in private browsing mode. We don’t track you — period.</p>
+          <a href="index.html" class="onboarding-ed__button-small">
+            <span class="badge-link__btn">Add DuckDuckGo to Firefox</span></a>
+           </div>
+         <div class="onboarding-ed__image-container">
+      <img class="onboarding-ed__image--placeholder" src="./img/3-bathtub-v2--pre-animation.svg" width="1200" height="460" alt="">
+    </div>  
+  </div>
+</section>
+
+<!--Light blue section start here-->
+
+<section id="footer_homepage">
+  <div id="onboarding-ed-4">
+    <div class="onboarding-ed__content">
+      <h1 class="onboarding-ed__title">Swithc to DcukDuckGo and<br data-owner="balance-text"> take back your privacy! </h1>
+        <p class="onboarding-ed__subtitle"> No tracking, no add targeting, just searching.</p>
+          <a href="index.html" class="onboarding-ed__button-small">
+            <span class="badge-link__btn">Add DuckDuckGo to Firefox</span></a>
+          </div>
+        <div class="onboarding-ed__image-container">
+      <img class="onboarding-ed__image--placeholder" src="./img/4-alpinist-v2.svg" width="1200" height="460" alt="">
+    </div>  
+  </div>
+</section>
+</footer>
 </div>
 </body>
 

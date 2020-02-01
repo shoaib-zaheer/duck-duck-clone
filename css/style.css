@@ -1,6 +1,8 @@
 body{
     margin: 0px;
     padding: 0pxs;
+    font-family: "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova","Helvetica Neue","Helvetica","Segoe UI","Nimbus Sans L","Liberation Sans","Open Sans",FreeSans,Arial,sans-serif;
+    color:#222;
 }
 
 /*-- Page C o n t a i n e r --*/
@@ -11,6 +13,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: lightgray;
+    overflow: hidden;
 }
 li{
     list-style-type: none;
@@ -156,7 +159,7 @@ li{
 }
 #nav-area{
   position: fixed;
-  width: 150px;
+  width: 250px;
   height: 100vh;
   margin: 0px 0 0 10px;
   padding: 50px 30px 30px;
@@ -221,6 +224,7 @@ li{
   background-repeat: no-repeat;
   display: block;
   position: relative;
+  text-decoration: none;
 }
 .logo-text-container{
   margin-top: 20px;
@@ -284,7 +288,7 @@ width: 600px;
 #search-button{
 border-radius: 0 4px 4px 0;
 min-width: 26px;
-color#999;
+color:#999;
 font-size: 1.25em;
 padding: 0 .64em;
 height: auto;
@@ -304,6 +308,7 @@ margin-right: -3px;
   background-color: lightgray;
 }
 .badge-link__wrap{
+
   margin: 0px;
   box-sizing: border-box;
   width: auto;
@@ -311,22 +316,29 @@ margin-right: -3px;
   padding: 0px;
   margin: 60px auto 100px;
 }
+/*work on this to position top every thing to left*/
+/*.badge-link__box-content{
+  display: flex;
+  justify-content: flex-start;
+}*/
 .badge-link__content{
-  max-width: 410;
+  
+  max-width: 350px;
   margin: 0 auto;
-  padding: 0px;
-  text-align: center;
+  padding: 25px;
+  text-align: left;
   cursor: initial;
   hyphens: auto;
 }
 /* h1 first top text */
 .badge-link__title{
-  font-size: 40px;
+  font-size: 30px;
   color: #eeeeee;
   margin: 0px;
   border: 0px;
   cursor: initial;
   hyphens: auto;
+
 }
 /* Paragraphed top first */
 .badge-link__subtitle{
@@ -345,24 +357,204 @@ margin-right: -3px;
   min-width: 235px;
   color: #fff;
   font-family: inherit;
+  background-color:#678fff !important;
+  border-color:#678fff !important;
+  width: 20%;
+  height: 43px;
+  float: left;
 }
 
 .badge-link__btn{
 display: flex;
-height: 43px;
-min-height: 44px;
-margin: 0;
-margin-top: 0px;
-margin-top: 0px;
-width: 20%;
+justify-content: flex-end;
+margin: 13px 25px 0 5px;
 font-size: 14px;
-line-height: 1.3;
-align-items: center;
-justify-content: center;
-background-color:#678fff !important;
-border-color:#678fff !important;
-box-sizing: border-box;
-font-weight: normal;
-border-radius: 10px;
-white-space: normal;
+font-weight: bold;
+}
+/*writing under the top button*/
+.badge-link__rating{
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  margin-top: 21px;
+  color: #65676a;
+  max-width: 300px;
+}
+.badge-link__rating-wrap{
+  padding: 0;
+  line-height: 1.35;
+  display: flex;
+  cursor: initial;
+  hyphens: auto;
+}
+.badge-link__rating__star{
+  margin-right: 2px;
+  font-family: sans-serif;
+}
+.badge-link__img{
+  display: block;
+  margin-top: -165px;
+  flex: 1 1 auto;
+  min-height: 285px;
+}
+/*middle 3 boxes*/
+.content-info{
+  text-align: center;
+  color: #353848;
+  hyphens: auto;
+}
+.content-info__title{
+  font-weight: 800;
+  font-size: 32px;
+  margin: 0px;
+  padding: 0px;
+}
+.content-info__items{
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 340px;
+  margin: 40px auto 0;
+  padding: 0 100px;
+  background-color: red;
+ 
+}
+.content-info__item-wrap{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1250px;
+  min-height: 340px;
+  text-align: center;
+  color:#353748;
+  hyphens: auto;
+}
+.content-info__item{
+  box-sizing: border-box;
+  width: 330px;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 17.5px;
+  margin-left: 17.5px;
+  padding: 20px 25px;
+  background-color:#fff;
+  border-radius: 18px;
+  box-shadow: 0px 10px 16px -8px rgba(0,0,0,0.2);
+}
+.content-info__item__icon{
+  width: 110px;
+  height: 100px;
+  margin: 30px;
+  display: block;
+}
+.content-info__item__title{
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  color: inherit;
+}
+.content-info__item__subtitle{
+  width: 70%;
+  font-size: 17px;
+  line-height: 1.5;
+  color: inherit;
+}
+/*Footer start from here*/
+
+.footer_homepage{
+  height: 400vh;
+  top: 100vh;
+  width: 100%;
+  margin: 0px;
+}
+#onboarding-ed{
+  background-color: #58b792;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  padding-top: 100px;
+
+}
+.onboarding-ed__content{
+  max-width: 700px;
+  margin: 0 auto;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  vertical-align: middle;
+  position: relative;
+
+}
+.onboarding-ed__title{
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 44px;
+  line-height: 48px;
+  font-weight: 800;
+  padding-top:0;
+}
+.onboarding-ed__subtitle{
+  font-size: 20px;
+  line-height: 28px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.onboarding-ed__button-small{
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 235px;
+  color: #fff;
+  font-family: inherit;
+  background-color:#19378b !important;
+  border-color:#4f649e !important;
+  width: 20%;
+  height: 43px;
+}
+.onboarding-ed__image-container{
+  height: 42%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;  
+}
+.onboarding-ed__image--placeholder{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+#onboarding-ed-2{
+  background-color:#f5a339 ;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  padding-top: 100px;
+}
+#onboarding-ed-3{
+  background-color:#5f63bd ;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  padding-top: 100px;
+}
+#onboarding-ed-4{
+  background-color:#a6c2ff ;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  padding-top: 100px;
 }
